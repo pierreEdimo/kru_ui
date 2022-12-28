@@ -106,7 +106,6 @@ export default function Home() {
                         </div>
                         <div className={styles.mobileHomeContainer}>
                             <span className={styles.bodyTitle}>Bienvenu sur kru</span>
-                            <div style={{height: 30}}></div>
                             <Card>
                                 <div className={styles.balanceCardContainer}>
                                     <div className={styles.balanceFlex}>
