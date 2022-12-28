@@ -21,13 +21,13 @@ const BottomBar: React.FC<BottomBarProps> = () => {
                         <Link href={"/"}>
                             <Image src={home} alt={"home-image"} width={35} height={35}/>
                         </Link>
-                        <Link href={"/"}>
+                        <Link href={"/paiement"}>
                             <Image src={operation} alt={"paiement-image"} width={35} height={35}/>
                         </Link>
-                        <Link href={"/"}>
+                        <Link href={"/portefeuille"}>
                             <Image src={wallet} alt={"wallet-image"} width={35} height={35}/>
                         </Link>
-                        <Link href={"/"}>
+                        <Link href={"/transactions"}>
                             <Image src={transaction} alt={"transaction-image"} width={35} height={35}/>
                         </Link>
                     </div>
