@@ -1,0 +1,22 @@
+.bottomBar {
+  width: 100%;
+  bottom: 0;
+  background: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  height: 80px;
+  z-index: 1;
+}
+
+.bottomBarContent{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .bottomBar {
+    display: none;
+  }
+}
