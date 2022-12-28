@@ -4,7 +4,6 @@ import Link from "next/link";
 import bell from "../public/notification (1).png";
 import Image from "next/image";
 import user from "../public/user (1).png";
-import settings from "../public/settings.png";
 
 export function AppBar({title}: { title: string }) {
     return (
@@ -14,16 +13,13 @@ export function AppBar({title}: { title: string }) {
                     <div className={styles.menuItems}>
                         <h2 className={styles.title}>{title}</h2>
                         <Link href="/">Dashboard</Link>
-                        <Link href="/">Paiement</Link>
-                        <Link href="/">Portefeuilles</Link>
-                        <Link href="/">Transactions</Link>
+                        <Link href="/paiement">Paiement</Link>
+                        <Link href="/portefeuille">Portefeuilles</Link>
+                        <Link href="/transactions">Transactions</Link>
                     </div>
                     <div className={styles.menuIcons}>
                         <Link href="/">
                             <Image src={bell} alt={"notification-image"} width={25} height={25}/>
-                        </Link>
-                        <Link href="/">
-                            <Image src={settings} alt={"setting-image"} width={25} height={25}/>
                         </Link>
                         <Link href="/">
                             <Image src={user} alt={"user-image"} width={25} height={25}/>
@@ -33,9 +29,6 @@ export function AppBar({title}: { title: string }) {
                 <div className={styles.mobileAppHeaderContent}>
                     <h2 className={styles.title}>{title}</h2>
                     <div className={styles.menuIcons}>
-                        <Link href="/">
-                            <Image src={settings} alt={"setting-image"} width={25} height={25}/>
-                        </Link>
                         <Link href="/">
                             <Image src={user} alt={"user-image"} width={25} height={25}/>
                         </Link>
