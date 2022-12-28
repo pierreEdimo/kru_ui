@@ -1,0 +1,10 @@
+.layoutContainer{
+    width: 992px;
+    margin: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .layoutContainer{
+      width: 95%;
+  }
+}
