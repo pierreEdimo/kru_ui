@@ -4,6 +4,7 @@ import homeStyles from "../styles/Home.module.scss";
 import styles from "../styles/paiement.module.scss";
 import {Card} from "../components/card";
 import Link from "next/link";
+import TransactionForm from "../components/transaction.form";
 
 export default function Transaction() {
 
@@ -19,29 +20,7 @@ export default function Transaction() {
                         <div className={styles.paimentForm}>
                             <span className={homeStyles.bodyTitle}>Nouvelle transaction</span>
                             <div style={{height: "20px"}}></div>
-                            <Card>
-                                <form className={styles.customForm}>
-                                    <input type={"text"} placeholder={"Nom d'utilisateur"}/>
-                                    <input type={"text"} placeholder={"Numero de compte unique"}/>
-                                    <input type={"number"} placeholder={"0"}/>
-                                    <select>
-                                        <option value={"XAF"}>XAF</option>
-                                    </select>
-                                    <select>
-                                        <option value={"1"}>Envoie</option>
-                                        <option value={"2"}>Requette de paiement</option>
-                                    </select>
-                                    <textarea placeholder={"Quelle est le but de cette transaction?"}></textarea>
-                                </form>
-                            </Card>
-                            <div style={{height: "30px"}}></div>
-                            <div className={styles.validationButton}
-                                 style={{float: "right", display: "flex", gap: "20px"}}>
-                                <Link href={"/"}>
-                                    <button type={"button"}>Annuller</button>
-                                </Link>
-                                <button onClick={valider} type={"button"}>Envoyer</button>
-                            </div>
+                            <TransactionForm/>
                         </div>
                         <div className={styles.paimentTransaction}>
                             <Card>
@@ -57,29 +36,7 @@ export default function Transaction() {
                         <div className={styles.mobilePaimentForm}>
                             <span className={homeStyles.bodyTitle}>Nouvelle transaction</span>
                             <div>
-                                <Card>
-                                    <form className={styles.customForm}>
-                                        <input type={"text"} placeholder={"Nom d'utilisateur"}/>
-                                        <input type={"text"} placeholder={"Numero de compte unique"}/>
-                                        <input type={"number"} placeholder={"0"}/>
-                                        <select>
-                                            <option value={"XAF"}>XAF</option>
-                                        </select>
-                                        <select>
-                                            <option value={"1"}>Envoie</option>
-                                            <option value={"2"}>Requette de paiement</option>
-                                        </select>
-                                        <textarea placeholder={"Quelle est le but de cette transaction?"}></textarea>
-                                    </form>
-                                </Card>
-                                <div style={{height: "20px"}}></div>
-                                <div className={styles.validationButton}
-                                     style={{float: "right", display: "flex", gap: "20px"}}>
-                                    <Link href={"/"}>
-                                        <button type={"button"}>Annuller</button>
-                                    </Link>
-                                    <button onClick={valider} type={"button"}>Envoyer</button>
-                                </div>
+                                <TransactionForm/>
                             </div>
                             <Card>
                                 <h4>Contacts recents</h4>
