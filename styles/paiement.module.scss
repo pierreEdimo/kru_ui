@@ -1,0 +1,126 @@
+.mainBody {
+  display: flex;
+  gap: 30px;
+}
+
+.paimentForm {
+  width: 60%;
+}
+
+.paimentTransaction {
+  width: 40%;
+}
+
+.customForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.validationButton button {
+  background: #ffffff;
+  border: solid 2px #d9d9d9;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.validationButton button:hover {
+  background: orange;
+}
+
+.customForm input {
+  border: none;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.customForm input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.customForm textarea {
+  width: 320px;
+  height: 120px;
+  resize: none;
+  font-size: 18px;
+  padding: 5px;
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.customForm textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.mobileMainBody {
+  width: 100%;
+}
+
+.mobilePaimentForm {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.customForm select {
+  border: none;
+  text-align: center;
+  text-indent: 1px;
+  appearance: none;
+  font-size: 22px;
+  background-color: #ffffff;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.customForm select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.customForm input::-webkit-outer-spin-button,
+.customForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.customForm input[type=number] {
+  -moz-appearance: textfield;
+  font-weight: bold;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .mainBody {
+    display: none;
+  }
+
+  .customForm input {
+    font-size: 16px;
+  }
+
+  .customForm select {
+    font-size: 16px;
+  }
+
+  .customForm textarea {
+    font-size: 16px;
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobileMainBody {
+    display: none;
+  }
+}
