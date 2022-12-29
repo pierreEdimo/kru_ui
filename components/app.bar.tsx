@@ -13,9 +13,9 @@ export function AppBar({title}: { title: string }) {
                     <div className={styles.menuItems}>
                         <h2 className={styles.title}>{title}</h2>
                         <Link href="/">Dashboard</Link>
-                        <Link href="/paiement">Paiement</Link>
+                        <Link href="/transaction">Transactions</Link>
                         <Link href="/portefeuille">Portefeuilles</Link>
-                        <Link href="/transactions">Transactions</Link>
+                        <Link href="/historique">Historique</Link>
                     </div>
                     <div className={styles.menuIcons}>
                         <Link href="/">
